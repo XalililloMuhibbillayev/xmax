@@ -6,16 +6,16 @@
     <!-- Links -->
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <!-- Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Icons -->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <title>Xmax Cart</title>
+    <title>Xmax Confrm Order</title>
 </head>
 <body>
     <!-- Header -->
@@ -44,72 +44,56 @@
     </header>
     <!-- Header end -->
     <!-- Main  -->
-    <section>
+    <main>
         <div class="container">
-            <div class="confirm-cart-block">
-                <div class="confirm-cart-title">
-                    <h3>Корзина</h3>
+            <div class="confirm-order">
+                <div class="confirm-order-title">
+                    <h3>Оформление заказа</h3>
                 </div>
-                <div class="confirm-cart-main">
-                    <div class="confirm-cart">
-                        <div class="confirm-carts">
-                            <div class="confirm-carts-trash">
-                                <a href="#">
-                                    <i class="fa-solid fa-trash"></i>
-                                </a>
-                            </div>
-                            <div class="confirm-carts-main">
-                                <div class="confirm-carts-main-image">
-                                    <img src="./images/cart_page_image.jpeg" alt="">
-                                </div>
-                                <div class="confirm-carts-main-title">
-                                    <h4>Apple Iphone 13 Pro</h4>
-                                    <p>9 850 000 сум</p>
-                                </div>
-                            </div>
-                            <div class="counter cart-page-counter">
-                                <i class="fa-solid fa-minus" id="reduce" onclick="reduce(this)"></i>
-                                <span id="count">0</span>
-                                <i class="fa-solid fa-plus" id="decremet" onclick="decrement(this)"></i>
-                            </div>
-                        </div>
-                        <div class="confirm-carts">
-                            <div class="confirm-carts-trash">
-                                <a href="#">
-                                    <i class="fa-solid fa-trash"></i>
-                                </a>
-                            </div>
-                            <div class="confirm-carts-main">
-                                <div class="confirm-carts-main-image">
-                                    <img src="./images/cart_page_image.jpeg" alt="">
-                                </div>
-                                <div class="confirm-carts-main-title">
-                                    <h4>Apple Iphone 13 Pro</h4>
-                                    <p>9 850 000 сум</p>
-                                </div>
-                            </div>
-                            <div class="counter cart-page-counter">
-                                <i class="fa-solid fa-minus" id="reduce" onclick="reduce(this)"></i>
-                                <span id="count">0</span>
-                                <i class="fa-solid fa-plus" id="decremet" onclick="decrement(this)"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="confirm-cart-form">
-                        <div class="confirm-cart-form-title">
-                            <h3>ИТОГО</h3>
+                <div class="confirm-order-main">
+                    <div class="confirm-order-form-block">
+                        <div class="confirm-order-form-title">
+                            <h3>Доставка курьером</h3>
                             <p>9 850 000 сум</p>
                         </div>
-                        <div class="confirm-cart-form-btn">
-                            <a href="./confirm_order.html">Перейти к оформлению</a>
+                        <div class="confirm-order-map" id="map"></div>
+                        <div class="confirm-order-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Адрес доставки</p>
+                        </div>
+                        <form action="" method="POST" class="confirm-order-form">
+                            <input type="text" name="city" placeholder="Город">
+                            <input type="text" name="street" placeholder="Улица / Район">
+                            <input type="text" name="house" placeholder="Дом">
+                            <input type="number" name="number" placeholder="Номер телефона">
+                            <button type="submit">Закончить оформление</button>
+                        </form>
+                    </div>
+                    <div class="your-order">
+                        <div class="your-order-title">
+                            <h3>Ваш заказ</h3>
+                        </div>
+                        <div class="your-order-main">
+                            <div class="your-order-block">
+                                <h3>Iphone 13 pro max</h3>
+                                <p>1x</p>
+                            </div>
+                            <div class="your-order-block">
+                                <h3>Iphone 13 pro max</h3>
+                                <p>1x</p>
+                            </div>
+                            <div class="your-order-block">
+                                <h3>Iphone 13 pro max</h3>
+                                <p>1x</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
     <!-- Main end -->
-    <!-- Footer  -->
+    <!-- Footer -->
     <footer>
         <div class="footer">
             <a href="./terms_of_service.html">
@@ -142,6 +126,8 @@
         </div>
     </footer>
     <!-- Footer end -->
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
