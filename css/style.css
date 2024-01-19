@@ -44,7 +44,6 @@ img {
 
 .navbar {
     max-width: 1135px;
-    padding: 0px 15px;
     height: 60px;
     margin: 0 auto;
     display: flex;
@@ -62,9 +61,7 @@ img {
 .logo h3 {
     color: #101010;
     font-size: 25px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
 .choice-phone-model span {
@@ -218,11 +215,13 @@ li.category-link a {
     gap: 10px;
 }
 
-.counter i {
+.counter i, .cart-page-counter i {
+    color: #FFA542;
     font-size: 18px;  
     padding: 2px;
     border-radius: 50%;
     border: 1px solid #FFA542;  
+    cursor: pointer;
 }
 
 .shop-icon-deactive {
@@ -234,6 +233,128 @@ li.category-link a {
 }
 
 /* Cart end */
+
+/* Cart Page */
+.confirm-product-block {
+    margin-top: 30px;
+}
+.confirm-product-title h3 {
+    font-size: 24px;
+    color: #101010;
+}
+.confirm-product-main {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.confirm-product {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.confirm-products {
+    width: 633px;
+    background: white;
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+}
+.confirm-products-tarsh {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.confirm-products-tarsh i {
+    color: rgb(235, 30, 30);
+    font-size: 18px;
+}
+.confirm-products-main {
+    display: flex;
+    align-items: center;
+}
+.confirm-products-main-image {
+    width: 141px;
+    height: 141px;
+}
+.confirm-products-main-title {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.confirm-products-main-title h4 {
+    color: #1c1c27;
+    font-size: 17px;
+    font-weight: 500;
+}
+.confirm-products-main-title p {
+    color: #aaaaaa;
+    font-size: 15px;
+    font-weight: 500;
+}
+.cart-page-counter {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+
+
+.confirm-product-form {
+    width: 348px;
+    height: 120px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+}
+.confirm-product-form-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    
+}
+.confirm-product-form-title h3 {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.confirm-product-form-title p {
+    color: #000;
+    text-align: right;
+    font-size: 15px;
+    font-weight: 600;
+}
+.confirm-product-form-btn {
+    width: 100%;
+    height: 65px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #101010;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.confirm-product-form-btn  a {
+    color: #FFF;
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Cart Page end */
 
 /* Main end */
 /* Footer */
@@ -297,6 +418,32 @@ li.category-link a {
 }
 /* Footer End */
 
+@media screen and (max-width:1115px) {
+    .confirm-products {
+        width: 433px;
+    }
+    .confirm-product-form {
+        width: 300px;
+    }
+    .confirm-product-form-btn a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .confirm-product-main {
+        justify-content: center;
+        gap: 20px;
+    }
+    .confirm-products {
+        width: 533px;
+    }
+    .confirm-product-form {
+        width: 350px;
+    }
+}
+
+
 @media screen and (max-width:1030px) {
     .contact-icons-block {
         flex-direction: row;
@@ -320,14 +467,24 @@ li.category-link a {
 
 
 @media screen and (max-width:600px) {
-    .navbar-icons {
-       display: none;
-    }   
+    .navbar {
+        flex-wrap: nowrap;
+    }
     .nav-item {
        width: 100%;
        justify-content: space-between;
        gap: 0px;
    }
+   .confirm-products {
+        width: 400px;
+    }
+    .confirm-products-main-image {
+        width: 100px;
+        height: 100px;
+    }
+    .cart-page-counter {
+        margin-left: 10px;
+    }
 }
 
 @media screen and (max-width:420px) {
@@ -341,5 +498,8 @@ li.category-link a {
     .banner-title h3 {
         font-size: 20px;
         width: 130px;
+    }
+    .confirm-products {
+        width: 340px;
     }
 }
