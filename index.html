@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links -->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <title>Xmax</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="navbar">
+                    <div class="nav-item">
+                        <a href="">
+                            <div class="logo">
+                                <h3>QPICK</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="navbar-icons">
+                        <a href="#">
+                            <i class="fa-solid fa-heart" style="color: #838383; font-size: 25px;"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping" style="color: #838383; font-size: 25px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Banner -->
+        <section>
+            <div class="container">
+                <div class="banner">
+                    <div class="banner-title">
+                        <h3>iPhone 15 про макс по низким ценам</h3>
+                    </div>
+                    <div class="banner-image">
+                        <img src="./images/banner_image.png" alt="Banner_image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner end -->
+
+        <!-- Category -->
+        <section>
+            <div class="container">
+                <div class="category">
+                    <ul class="category-item">
+                        <li class="category-link">
+                            <a href="#">Apple</a>
+                            <div class="category-underline"></div>
+                        </li>
+                        <li class="category-link">
+                            <a href="#">Xiaomi</a>
+                            <div class="category-underline"></div>
+                        </li>
+                        <li class="category-link">
+                            <a href="#">Samsung</a>
+                            <div class="category-underline"></div>
+                        </li>
+                        <li class="category-link">
+                            <a href="#">OnePlus</a>
+                            <div class="category-underline"></div>
+                        </li>
+                        <li class="category-link">
+                            <a href="#">Google</a>
+                            <div class="category-underline"></div>
+                        </li>
+                        <li class="category-link">
+                            <a href="#">Motorola</a>
+                            <div class="category-underline"></div>
+                        </li>
+                        <li class="category-link">
+                            <a href="#">Sony</a>
+                            <div class="category-underline"></div>
+                        </li>
+                        <li class="category-link">
+                            <a href="#">Huawei</a>   
+                            <div class="category-underline"></div>
+                        </li>
+                        <li class="category-link">
+                            <a href="#">Realme</a>   
+                            <div class="category-underline"></div>
+                        </li>
+                        <li class="category-link">
+                            <a href="#">Honor</a>   
+                            <div class="category-underline"></div>
+                        </li>
+                        <li class="category-link">
+                            <a href="#">Artel</a>   
+                            <div class="category-underline"></div>
+                        </li>
+                    </ul>                     
+                </div>
+            </div>
+        </section>
+        <!-- Category End -->
+
+        <!-- Product -->
+        <section>
+            <div class="container">
+                <div class="cart">
+                    <div class="product">
+                        <div class="product-main">
+                            <div class="product-wish-list">
+                                <a href="#">
+                                    <i class="fa-solid fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="product-image">
+                                <img src="./images/cart-image.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="product-description">
+                            <div class="product-price">
+                                <h3>iPhone 13 Pro</h3>
+                                <b>9 850 000 сум</b>
+                            </div>
+                            <div class="product-shop-icon">
+                                <div onclick="toggleAnswer('id-1')" id="id-1">
+                                    <a href="#">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </a>
+                                </div>
+                                <div id="counter-id-1" class="counter">
+                                    <i class="fa-solid fa-minus" id="reduce" onclick="reduce(this)"></i>
+                                    <span id="count">0</span>
+                                    <i class="fa-solid fa-plus" id="decremet" onclick="decrement(this)"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-main">
+                            <div class="product-wish-list">
+                                <a href="#">
+                                    <i class="fa-solid fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="product-image">
+                                <img src="./images/cart-image.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="product-description">
+                            <div class="product-price">
+                                <h3>iPhone 13 Pro</h3>
+                                <b>9 850 000 сум</b>
+                            </div>
+                            <div class="product-shop-icon">
+                                <div onclick="toggleAnswer('id-2')" id="id-2">
+                                    <a href="#">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </a>
+                                </div>
+                                <div id="counter-id-2" class="counter">
+                                    <i class="fa-solid fa-minus" id="reduce" onclick="reduce(this)"></i>
+                                    <span id="count">0</span>
+                                    <i class="fa-solid fa-plus" id="decremet" onclick="decrement(this)"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-main">
+                            <div class="product-wish-list">
+                                <a href="#">
+                                    <i class="fa-solid fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="product-image">
+                                <img src="./images/cart-image.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="product-description">
+                            <div class="product-price">
+                                <h3>iPhone 13 Pro</h3>
+                                <b>9 850 000 сум</b>
+                            </div>
+                            <div class="product-shop-icon">
+                                <div onclick="toggleAnswer('id-3')" id="id-3">
+                                    <a href="#">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </a>
+                                </div>
+                                <div id="counter-id-3" class="counter">
+                                    <i class="fa-solid fa-minus" id="reduce" onclick="reduce(this)"></i>
+                                    <span id="count">0</span>
+                                    <i class="fa-solid fa-plus" id="decremet" onclick="decrement(this)"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-main">
+                            <div class="product-wish-list">
+                                <a href="#">
+                                    <i class="fa-solid fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="product-image">
+                                <img src="./images/cart-image.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="product-description">
+                            <div class="product-price">
+                                <h3>iPhone 13 Pro</h3>
+                                <b>9 850 000 сум</b>
+                            </div>
+                            <div class="product-shop-icon">
+                                <div onclick="toggleAnswer('id-4')" id="id-4">
+                                    <a href="#">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </a>
+                                </div>
+                                <div id="counter-id-4" class="counter">
+                                    <i class="fa-solid fa-minus" id="reduce" onclick="reduce(this)"></i>
+                                    <span id="count">0</span>
+                                    <i class="fa-solid fa-plus" id="decremet" onclick="decrement(this)"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product end -->
+
+    </main>
+    <footer>
+        <div class="footer">
+            <a href="./terms_of_service.html">
+                <div class="logo">
+                    <h3>QPICK</h3>
+                </div>
+            </a>
+            <div class="footer-item">
+                <a href="./saved.html" class="footer-link">Избранное</a>
+                <a href="./korzina.html" class="footer-link">Корзина</a>
+                <a href="./contact.html" class="footer-link">Контакты</a>
+            </div>
+            <div class="footer-terms">
+                <div class="footer-terms-title">
+                    <h3>Условия сервиса</h3>
+                </div>
+                <div class="footer-terms-main">
+                    <i class="fa-solid fa-globe" style="color: #838383;"></i>
+                    <a href="#">Каз</a>
+                    <a href="#">Рус</a>
+                    <a href="#">Eng</a>
+                </div>
+            </div>
+            <div class="footer-icons">
+                <i class="fa-brands fa-vk" style="color: #101010; font-size: 30px;"></i>
+                <i class="fa-brands fa-instagram" style="color: #101010; font-size: 30px;"></i>
+                <i class="fa-brands fa-telegram" style="color: #101010; font-size: 30px;"></i>
+                <i class="fa-brands fa-whatsapp" style="color: #101010; font-size: 30px;"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
