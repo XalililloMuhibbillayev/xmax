@@ -524,7 +524,7 @@ li.category-link a {
     opacity: 0.7;
 }
 
-.active-detail-image {
+.active {
     opacity: 1;
     border: 1px solid #FFA542;
 }
