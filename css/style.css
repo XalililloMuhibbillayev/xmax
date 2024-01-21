@@ -171,6 +171,9 @@ li.category-link a {
     height: 300px;
     background-color: white;
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .product-wish-list {
@@ -183,6 +186,13 @@ li.category-link a {
     font-size: 25px;
     color: #CCCCCC;
     cursor: pointer;
+}
+.product-image {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .product-description {
     display: flex;
